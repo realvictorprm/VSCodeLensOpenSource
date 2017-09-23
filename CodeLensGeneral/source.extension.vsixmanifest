@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" ?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+	<Metadata>
+		<Identity Id="CodeLensGeneral.4c43c7cd-8d15-43e1-9fde-9a3f445ce499" Version="42.42.42.42" Language="en-US" Publisher="Victor P. R. Müller" />
+		<DisplayName>CodeLensGeneral</DisplayName>
+		<Description xml:space="preserve">General Code Lens implementation.</Description>
+	</Metadata>
+	<Dependencies>
+		<Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.6,)" />
+	</Dependencies>
+	<Assets>
+		<Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="CodeLensImplementation" Path="|CodeLensImplementation|"  />
+	</Assets>
+	<Prerequisites>
+		<Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,16.0)" DisplayName="Visual Studio core editor" />
+	</Prerequisites>
+	<Installation Experimental="true">
+		<InstallationTarget Version="[15.0,16.0)" Id="Microsoft.VisualStudio.Pro" />
+	</Installation>
+</PackageManifest>
